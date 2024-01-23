@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Buttons</title>
     <style>
-        #container {
-            width: 400px;
-            height: 400px;
-            position: relative;
-            background-color: #f0f0f0;
+        /* Style for the buttons */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            transition: background-color 0.3s;
         }
 
-        #ball {
-            width: 50px;
-            height: 50px;
-            background-color: #3498db;
-            border-radius: 50%;
-            position: absolute;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-300px);
-            }
-        }
+        /* Button colors */
+        .button-blue { background-color: #3498db; }
+        .button-green { background-color: #2ecc71; }
+        .button-orange { background-color: #e67e22; }
+        .button-purple { background-color: #9b59b6; }
     </style>
 </head>
-<body>
-    <div id="container">
-        <div id="ball"></div>
-    </div>
+<body class="body">
+
+    <!-- Buttons with different colors -->
+    <a href="#" class="button button-blue" id="blue">Blue Button</a>
+    <a href="#" class="button button-green" id="green">Green Button</a>
+    <a href="#" class="button button-orange" id="orange">Orange Button</a>
+    <a href="#" class="button button-purple" id="purple">Purple Button</a>
+
+    <script src="logic.js"></script>
 </body>
 </html>
