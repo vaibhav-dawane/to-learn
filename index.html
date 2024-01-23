@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colored Buttons</title>
-    <style>
-        /* Style for the buttons */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            color: #fff;
-            transition: background-color 0.3s;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Green Fish</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* Optional background color for the page */
+    }
 
-        /* Button colors */
-        .button-blue { background-color: #3498db; }
-        .button-green { background-color: #2ecc71; }
-        .button-orange { background-color: #e67e22; }
-        .button-purple { background-color: #9b59b6; }
-    </style>
+    .fish {
+      width: 100px;
+      height: 50px;
+      background-color: green;
+      clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+      transform: rotate(45deg);
+    }
+  </style>
 </head>
-<body class="body">
-
-    <!-- Buttons with different colors -->
-    <a href="#" class="button button-blue" id="blue">Blue Button</a>
-    <a href="#" class="button button-green" id="green">Green Button</a>
-    <a href="#" class="button button-orange" id="orange">Orange Button</a>
-    <a href="#" class="button button-purple" id="purple">Purple Button</a>
-
-    <script src="logic.js"></script>
+<body>
+  <div class="fish"></div>
 </body>
 </html>
